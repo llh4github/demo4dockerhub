@@ -35,7 +35,7 @@ jobs:
         with:
           images: linhong4dockerhub/demo4dockerhub
           tags: |
-            type=ref,event=branch
+            type=sha
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
